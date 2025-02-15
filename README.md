@@ -1,0 +1,1 @@
+This Chrome extension has a single purpose: to extract the user's personal CP-Authorization token from ClassPass website requests to enable API access to their own ClassPass account. The extension only reads this specific authentication header from ClassPass.com domains and stores it locally for the user to copy.
