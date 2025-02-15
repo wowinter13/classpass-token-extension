@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .token-box {
+      padding: 10px;
+      background: #f5f5f5;
+      border-radius: 4px;
+      word-break: break-all;
+      font-family: monospace;
+      margin: 10px 0;
+    }
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    .status {
+      color: #666;
+      font-size: 0.9em;
+    }
+    .error {
+      color: #d32f2f;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>ClassPass Token Extractor</h2>
+    <div id="tokenStatus" class="status">Waiting for token...</div>
+    <div id="tokenBox" class="token-box" style="display: none;"></div>
+    <button id="copyButton" style="display: none;">Copy to Clipboard</button>
+    <div id="error" class="error" style="display: none;"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
